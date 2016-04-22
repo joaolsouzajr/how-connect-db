@@ -11,20 +11,20 @@ Exists many database vendors, open source and commercial/closed source.
 
 Open source
 
-* (PostgreSQL)[]
-* (MysqlCommunity)[]
-* (Sqlite3)[]
-* (Outros)[]
+* [PostgreSQL](http://www.postgresql.org/)
+* [Mysql Community](https://dev.mysql.com/downloads/mysql/)
+* [Sqlite3](https://www.sqlite.org/)
+* [Outros]()
 
 Comercial
 
-* (Oracle)[]
-* (SQL Server)[]
-* (Sybase)[]
-* (Outros)[]
+* [Oracle](https://www.oracle.com/database/)
+* [SQL Server](https://pt.wikipedia.org/wiki/Microsoft_SQL_Server)
+* [Sybase](https://pt.wikipedia.org/wiki/Sybase)
+* Outros
 
 
-## Install Database 
+## Install Database
 
 In this tutorial I use PostgreSQl
 
@@ -36,17 +36,17 @@ On Linux Red Hat fammily:
         sudo postgresql-setup initdb
         sudo systemctl enable postgresql.service
         sudo systemctl start postgresql.service
- 
-Others ways to install see (PostgreSQL site)[http://www.postgresql.org/download/].
+
+Others ways to install see [PostgreSQL site](http://www.postgresql.org/download/).
 #### Configure PostgreSQL
 
-1. Open file /etc/postgresql/9.4/main/pg_hba.conf, 
+1. Open file /etc/postgresql/9.4/main/pg_hba.conf,
 search session "IPv4 local connections" and alter to:
 
         # IPv4 local connections:
         host    all    all    0.0.0.0/0  md5
 
-2. Open file /etc/postgresql/9.4/main/postgresql.conf, 
+2. Open file /etc/postgresql/9.4/main/postgresql.conf,
 search session  "# - Connection Settings" and alter to:
 
         # - Connection Settings –
@@ -103,4 +103,3 @@ search session  "# - Connection Settings" and alter to:
 
 1. (Databases)[https://en.wikipedia.org/wiki/Database]
 2. (Install PostgreSQL)[http://www.postgresql.org/download/]
-
