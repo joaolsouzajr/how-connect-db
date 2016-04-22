@@ -1,0 +1,22 @@
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'eclipse'
+
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.12'
+}
+
+mainClassName = "jdbc.App"
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    compile 'org.postgresql:postgresql:9.4-1200-jdbc41'
+    testCompile 'org.codehaus.groovy:groovy-all:2.4.6'
+    testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
+
+}
